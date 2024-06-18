@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffecd1; /* Jasny pomarańczowy */
+            color: #333;
+        }
+        header {
+            background-color: #ff8c42; /* Ciemny pomarańczowy */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffa45b; /* Średni pomarańczowy */
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #ff7b2c; /* Ciemniejszy pomarańczowy */
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            background-color: #ffe5b4; /* Bardzo jasny pomarańczowy */
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+    <p style="text-align:left">Hello there! I'm [Your Name], a [Your Profession/Title] based in [Your Location]. I have a passion for [Your Passion/Interest], and I'm dedicated to [Brief Description of Your Goals or Mission].<br><br>
+
+Background<br>
+I have [Number of Years] years of experience in [Your Field/Area of Expertise]. Throughout my career, I've had the opportunity to [Briefly Describe Key Experiences or Achievements]. I'm constantly seeking new challenges and opportunities to expand my skills and knowledge.<br><br>
+
+Interests<br>
+Outside of work, I enjoy [Hobbies or Interests]. Whether it's [Specific Interest 1], [Specific Interest 2], or [Specific Interest 3], I find joy and inspiration in [Brief Description of Why You Enjoy Your Interests].<br><br>
+
+Philosophy<br>
+I believe in [Your Philosophical Beliefs or Values]. I'm committed to [Briefly Describe Your Commitments or Principles], both personally and professionally.<br><br></p>
+</section>
+</body>
+</html>

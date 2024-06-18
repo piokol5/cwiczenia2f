@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"">
+    <style>
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            height:100%;
+            text-align:center;
+        }
+        h1 {
+            font-size: 300%;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        a{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:yellow;
+            color:black;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+        a:hover{
+            display:block;
+            width:25%;
+            height:3em;
+            background-color:black;
+            color:yellow;
+            font-size:200%;
+            float:left;
+            text-decoration:none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About me</h1>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('aboutme') }}">About me</a>
+        <a href="{{ url_for('gallery') }}">Gallery</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <br><br><br><br><br><br><br><br><br><br>
+        /div>
+</body>
+</html
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Błąd</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffecd1; /* Jasny pomarańczowy */
+            color: #333;
+        }
+        header {
+            background-color: #ff8c42; /* Ciemny pomarańczowy */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffa45b; /* Średni pomarańczowy */
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #ff7b2c; /* Ciemniejszy pomarańczowy */
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            background-color: #ffe5b4; /* Bardzo jasny pomarańczowy */
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Błąd</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('aboutme') }}">About me</a></li>
+            <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+    <p style="text-align:left"><h1>Błąd 401 - brak autoryzacji</p><
+</section>
+</body>
+</html>
